@@ -6,7 +6,3 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get install -y vim less
 RUN apt-get install -y avrdude avr-libc gcc-avr gdb-avr
 
-# Set entry point to bash
-ENTRYPOINT ["bash", "-c"]
-
-CMD ["bash"]

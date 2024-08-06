@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  avr-env:
+  env:
     build: 
       dockerfile: ./Dockerfile
     hostname: avr-env
