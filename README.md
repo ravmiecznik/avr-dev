@@ -3,11 +3,6 @@
 
 ## SETUP
 
-* ### Build local docker image from root of this repo:
-```bash
-> docker build -t avr-env .
-```
-
 * ### Compose avr-env:
 ```bash
 > [ -d ./avr-root ] || mkdir ./avr-root

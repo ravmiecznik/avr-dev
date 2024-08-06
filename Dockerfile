@@ -7,4 +7,6 @@ RUN apt-get install -y vim less
 RUN apt-get install -y avrdude avr-libc gcc-avr gdb-avr
 
 # Set entry point to bash
-CMD ["echo", "hello from avr-env"]
+ENTRYPOINT ["bash", "-c"]
+
+CMD ["bash"]

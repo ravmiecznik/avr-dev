@@ -1,13 +1,14 @@
 version: "3.9"
 services:
-  my_service:
-    image: avr-env
+  avr-env:
+    build: 
+      dockerfile: ./Dockerfile
     hostname: avr-env
-    container_name: avr-container
+    container_name: avr-env
     volumes:
       - type: bind
         target: /root
         source: ./avr-root
-
-    command: ["sleep", "86400"]
+    tty: true
+    stdin_open: true
 
